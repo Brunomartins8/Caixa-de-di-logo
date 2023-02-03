@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Página</title>
+	<meta charset="utf-8">
+	<meta meta name="viewport" content=
+            "width=device-width, user-scalable=no" />
+	<link rel="stylesheet" id="" href=""/>
+	<link rel="stylesheet" href=""/>
+</body>
+
+<style>
+body {
+	background-color: #002B36;
+	width: 100%;
+}
+p {
+	font-family: serif;
+	color: #EEEEEE;
+}
+</style>
+
+
+
+<p>Este patch aplica a caixa de diálogo, caso queira fazer modificações nele, vou deixar alguns exemplos aqui!
+==============================================
+==============================================</p>
+
+
+<p>Para alterar o tipo da fonte basta substituir esses arquivos "<a style="color: gold">button.ttf</a>" "<a style="color: gold">message.ttf</a>" "<a style="color: gold">title.ttf</a>" você pode baixar outros se desejar!!!<br></br>
+
+site: <a style="color: red; text-decoration: none" href="https://www.dafont.com/pt/ttf.d592">CLIQUE AQUI</a>
+==============================================
+==============================================</p>
+
+<p>Para substituir a cor de fundo da caixa de diálogo, basta substituir a cor rgb dentro do arquivo <a style="color: gold">"alert0.smali"</a>, use uma paleta de cores para ter mais opções de cores. Referências <a style="color: gold">"setBackgroundDrawable"</a> e cor rgb <a style="color:#2AA198">"#FFF5F5F5"</a><br></br>
+
+    <a style="color: #859900">const-string</a> v4, <a style="color:#2AA198">"#FFF5F5F5"</a><br></br>
+
+    invoke-virtual {v2, v3, v4}, Lcom/apkeditorprobr/alerta1;->getIns(ILjava/lang/String;)Landroid/graphics/drawab</br>le/GradientDrawable;<br></br>
+
+    <a style="color: #859900">move-result-object</a> v2<br></br>
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setBackgroundDrawable(Landroid/graphics/drawabl</br>e/Drawable;)V<br></br>
+    
+==============================================
+==============================================
+
+
+<p>Para substituir as cores dos textos <a style="color: gold">"Ok"</a> e <a style="color: gold">"Facebook"</a>, basta substituir a cor rgb que está dentro do arquivo <a style="color: gold">"alerta0.smali"</a> referências "parseColor" e <a style="color:#2AA198">"#FF28649C"</a>
+
+
+==============================================
+==============================================</p>
+
+<p>Para fazer a caixa de diálogo aparecer com mais frequência, basta substituir <a style="color: #B58900">0x1</a> use como referência <a style="color: gold">"getSharedPreferences"</a>...<br></br>
+
+
+<a style="color: #859900">const</a> v1, <a style="color: #B58900">0x1</a><br></br>
+
+    <a style="color: #859900">if-eq</a> v0, v1, <a style="color: #93A1A1">:cond_1ed</a><br></br>
+
+    .line <a style="color: #B58900">26</a><br>
+    <a style="color: #859900">const-string</a> v0, <a style="color:#2AA198">""</a><br></br>
+
+    <a style="color: #859900">const/4</a> v1, <a style="color: #B58900">0x0</a><br></br>
+
+    <a style="color: #859900">invoke-virtual</a> {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/c</br>ontent/SharedPreferences;
+
+==============================================
+==============================================<p>
+
+Para alterar o link de redirecionamento basta substituir o link que esta dentro do arquivo <a style="color: gold">"alerta2.smali"</a> referência <a style="color:#2AA198">"https://m.facebook.com/100064524120380/"</a>
+==============================================
+==============================================</p>
+<br></br>
+
+</html>
