@@ -34,8 +34,9 @@ site: <a style="color: red; text-decoration: none" href="https://www.dafont.com/
 ==============================================
 ==============================================</p>
 
-<p>Para substituir a cor de fundo da caixa de diálogo, basta substituir a cor rgb dentro do arquivo <a style="color: gold">"alert0.smali"</a>, use uma paleta de cores para ter mais opções de cores. Referências <a style="color: gold">"setBackgroundDrawable"</a> e cor rgb <a style="color:#2AA198">"#FFF5F5F5"</a><br></br>
+<p>Para substituir a cor de fundo da caixa de diálogo, basta substituir a cor rgb dentro do arquivo <a style="color: gold">"alert0.smali"</a>, use uma paleta de cores para ter mais opções de cores. Referência <a style="color: #FF4949"> #Cor do fundo da caixa de diálogo</a><br></br>
 
+    <a style="color: #FF4949"> #Cor do fundo da caixa de diálogo</a></br>
     <a style="color: #859900">const-string</a> v4, <a style="color:#2AA198">"#FFF5F5F5"</a><br></br>
 
     invoke-virtual {v2, v3, v4}, Lcom/apkeditorprobr/alerta1;->getIns(ILjava/lang/String;)Landroid/graphics/drawab</br>le/GradientDrawable;<br></br>
@@ -49,14 +50,21 @@ site: <a style="color: red; text-decoration: none" href="https://www.dafont.com/
 
 
 <p>Para substituir as cores dos textos <a style="color: gold">"Ok"</a> e <a style="color: gold">"Facebook"</a>, basta substituir a cor rgb que está dentro do arquivo <a style="color: gold">"alerta0.smali"</a> referências <a style="color: gold">"parseColor"</a> e <a style="color:#2AA198">"#FF28649C"</a>
-
-
+<br></br>
+<a style="color: #FF4949">#Cor do texto "Apk Editor Pro Br"
+<br></br>
+#Cor do texto "Aplicativo Premium - Sem anúncios"
+<br></br>
+#Cor do texto "Ok"
+<br></br>
+#Cor do texto "Facebook"
+<br></br></a>
 ==============================================
 ==============================================</p>
 
 <p>Para fazer a caixa de diálogo aparecer com mais frequência, basta substituir <a style="color: #B58900">0x1</a> use como referência <a style="color: gold">"getSharedPreferences"</a>...<br></br>
 
-
+<a style="color: #FF4949">#0x1 Programado para mostrar a caixa de diálogo apenas uma vez </a></br>
 <a style="color: #859900">const</a> v1, <a style="color: #B58900">0x1</a><br></br>
 
     <a style="color: #859900">if-eq</a> v0, v1, <a style="color: #93A1A1">:cond_1ed</a><br></br>
